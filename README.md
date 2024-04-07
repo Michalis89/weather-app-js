@@ -47,7 +47,7 @@ Weatherio is a weather web application that provides users with current weather 
 
 ## Demo
 
-You can try out the live demo of Weatherio [here](https://your-firebase-app.firebaseapp.com/).
+You can try out the live demo of Weatherio [here](https://weather-app-js-b6959.web.app).
 
 ## Credits
 
