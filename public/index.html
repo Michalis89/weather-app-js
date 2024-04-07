@@ -21,6 +21,7 @@
   <script src="./assets/js/app.js" type="module"></script>
   <script src="./assets/js/route.js" type="module"></script>
 
+
   <body>
     <header class="header">
       <div class="container">
@@ -52,16 +53,8 @@
 
           <div class="search-result" data-search-result>
             <ul class="view-list" data-search-list>
-              <li class="view-item">
-                <span class="m-icon">location_on</span>
 
-                <div>
-                  <p class="item-title">London</p>
-
-                  <p class="label-2 item-subtitle">State of London, GB</p>
-                </div>
-
-                <a href="#" class="item-link has-state" data-search-toggler>Click here</a>
+                <a href="#" class="item-link has-state" data-search-toggler></a>
               </li>
             </ul>
           </div>
@@ -72,7 +65,7 @@
             <span class="m-icon icon">search</span>
           </button>
 
-          <a href="#/current-location" class="btn-primary has-state" data-currect-location-btn>
+          <a href="#/current-location" class="btn-primary has-state" data-current-location-btn>
             <span class="m-icon">my_location</span>
 
             <span class="span">Currect Location</span>
@@ -82,9 +75,13 @@
     </header>
 
     <main>
-      <article class="container">
+      <article class="container" data-container>
         <div class="content-left">
-          <section class="section currrent-weather" aria-label="currrent-weather">
+          <section
+            class="section currrent-weather"
+            aria-label="currrent-weather"
+            data-current-weather
+          >
             <div class="card card-lg current-weather-card">
               <h2 class="title-2 card-title">Now</h2>
               <div class="weapper">
@@ -214,7 +211,7 @@
               <h2 class="title-2" id="highlights-label">Todays Highlights</h2>
 
               <div class="highlights-list">
-                <div class="card card-sm highlight-card one">
+                <div class="card card-sw highlight-card one">
                   <h3 class="title-3">Air Quality Index</h3>
                   <div class="wrapper">
                     <span class="m-icon">air</span>
@@ -242,7 +239,7 @@
                   <span class="badge aqi-1 label-1" title="aqi message"> Good </span>
                 </div>
 
-                <div class="card card-sm highlight-card two">
+                <div class="card card-sw highlight-card two">
                   <h3 class="title-3">Sunrise & Sunset</h3>
 
                   <div class="card-list">
@@ -263,7 +260,7 @@
                   </div>
                 </div>
 
-                <div class="card card-sm highlight-card">
+                <div class="card card-sw highlight-card">
                   <h3 class="title-3">Humidity</h3>
                   <div class="wrapper">
                     <span class="m-icon">humidity_percentage</span>
@@ -271,7 +268,7 @@
                   </div>
                 </div>
 
-                <div class="card card-sm highlight-card">
+                <div class="card card-sw highlight-card">
                   <h3 class="title-3">Pressure</h3>
                   <div class="wrapper">
                     <span class="m-icon">airwave</span>
@@ -279,7 +276,7 @@
                   </div>
                 </div>
 
-                <div class="card card-sm highlight-card">
+                <div class="card card-sw highlight-card">
                   <h3 class="title-3">Visibility</h3>
                   <div class="wrapper">
                     <span class="m-icon">visibility</span>
@@ -287,7 +284,7 @@
                   </div>
                 </div>
 
-                <div class="card card-sm highlight-card">
+                <div class="card card-sw highlight-card">
                   <h3 class="title-3">Feels Like</h3>
                   <div class="wrapper">
                     <span class="m-icon">thermostat</span>
@@ -305,10 +302,10 @@
           >
             <h2 class="title2">Today at</h2>
 
-            <div class="slider-container">
+            <div class="spider-container">
               <ul class="slider-list" data-temp>
                 <li class="slider-item">
-                  <div class="card card-sm slider-card">
+                  <div class="card card-sw slider-card">
                     <p class="body-3">03 PM</p>
                     <img
                       src="./assets/images/weather_icons/01n.png"
@@ -324,7 +321,7 @@
                   </div>
                 </li>
                 <li class="slider-item">
-                  <div class="card card-sm slider-card">
+                  <div class="card card-sw slider-card">
                     <p class="body-3">03 PM</p>
                     <img
                       src="./assets/images/weather_icons/01n.png"
@@ -340,7 +337,7 @@
                   </div>
                 </li>
                 <li class="slider-item">
-                  <div class="card card-sm slider-card">
+                  <div class="card card-sw slider-card">
                     <p class="body-3">03 PM</p>
                     <img
                       src="./assets/images/weather_icons/01n.png"
@@ -356,7 +353,7 @@
                   </div>
                 </li>
                 <li class="slider-item">
-                  <div class="card card-sm slider-card">
+                  <div class="card card-sw slider-card">
                     <p class="body-3">03 PM</p>
                     <img
                       src="./assets/images/weather_icons/01n.png"
@@ -372,7 +369,7 @@
                   </div>
                 </li>
                 <li class="slider-item">
-                  <div class="card card-sm slider-card">
+                  <div class="card card-sw slider-card">
                     <p class="body-3">03 PM</p>
                     <img
                       src="./assets/images/weather_icons/01n.png"
@@ -388,7 +385,7 @@
                   </div>
                 </li>
                 <li class="slider-item">
-                  <div class="card card-sm slider-card">
+                  <div class="card card-sw slider-card">
                     <p class="body-3">03 PM</p>
                     <img
                       src="./assets/images/weather_icons/01n.png"
@@ -404,7 +401,7 @@
                   </div>
                 </li>
                 <li class="slider-item">
-                  <div class="card card-sm slider-card">
+                  <div class="card card-sw slider-card">
                     <p class="body-3">03 PM</p>
                     <img
                       src="./assets/images/weather_icons/01n.png"
@@ -420,7 +417,7 @@
                   </div>
                 </li>
                 <li class="slider-item">
-                  <div class="card card-sm slider-card">
+                  <div class="card card-sw slider-card">
                     <p class="body-3">03 PM</p>
                     <img
                       src="./assets/images/weather_icons/01n.png"
@@ -439,7 +436,7 @@
 
               <ul class="slider-list" data-wind>
                 <li class="slider-item">
-                  <div class="card card-sm slider-card">
+                  <div class="card card-sw slider-card">
                     <p class="body-3">03 PM</p>
                     <img
                       src="./assets/images/weather_icons/direction.png"
@@ -455,7 +452,7 @@
                   </div>
                 </li>
                 <li class="slider-item">
-                  <div class="card card-sm slider-card">
+                  <div class="card card-sw slider-card">
                     <p class="body-3">03 PM</p>
                     <img
                       src="./assets/images/weather_icons/direction.png"
@@ -471,7 +468,7 @@
                   </div>
                 </li>
                 <li class="slider-item">
-                  <div class="card card-sm slider-card">
+                  <div class="card card-sw slider-card">
                     <p class="body-3">03 PM</p>
                     <img
                       src="./assets/images/weather_icons/direction.png"
@@ -487,7 +484,7 @@
                   </div>
                 </li>
                 <li class="slider-item">
-                  <div class="card card-sm slider-card">
+                  <div class="card card-sw slider-card">
                     <p class="body-3">03 PM</p>
                     <img
                       src="./assets/images/weather_icons/direction.png"
@@ -503,7 +500,7 @@
                   </div>
                 </li>
                 <li class="slider-item">
-                  <div class="card card-sm slider-card">
+                  <div class="card card-sw slider-card">
                     <p class="body-3">03 PM</p>
                     <img
                       src="./assets/images/weather_icons/direction.png"
@@ -519,7 +516,7 @@
                   </div>
                 </li>
                 <li class="slider-item">
-                  <div class="card card-sm slider-card">
+                  <div class="card card-sw slider-card">
                     <p class="body-3">03 PM</p>
                     <img
                       src="./assets/images/weather_icons/direction.png"
@@ -535,7 +532,7 @@
                   </div>
                 </li>
                 <li class="slider-item">
-                  <div class="card card-sm slider-card">
+                  <div class="card card-sw slider-card">
                     <p class="body-3">03 PM</p>
                     <img
                       src="./assets/images/weather_icons/direction.png"
@@ -551,7 +548,7 @@
                   </div>
                 </li>
                 <li class="slider-item">
-                  <div class="card card-sm slider-card">
+                  <div class="card card-sw slider-card">
                     <p class="body-3">03 PM</p>
                     <img
                       src="./assets/images/weather_icons/direction.png"
@@ -578,7 +575,7 @@
     <section class="error-content" data-error-content>
       <h2 class="heading">404</h2>
       <p class="body-1">Page not found!</p>
-      <a href="#" class="btn-primary">
+      <a href="#/weather?lat=37.9839412&lon=23.7283052" class="btn-primary">
         <span class="span">Go Home</span>
       </a>
     </section>

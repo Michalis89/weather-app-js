@@ -273,6 +273,7 @@ body {
 .card-sm {
   padding: 16px;
   border-radius: var(--radius-16);
+  margin-bottom: 10px;
 }
 
 .heading {
@@ -314,6 +315,19 @@ body {
 
 .label-2 {
   font-size: var(--label-2);
+}
+
+.fade-in {
+  animation: fadeIn 500ms ease forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .header .btn-primary .span {
@@ -603,8 +617,8 @@ article.container::before {
 
 .badge {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 12px;
+  right: 12px;
   padding: 2px 12px;
   border-radius: var(--radius-pill);
   cursor: help;
@@ -806,6 +820,12 @@ article.container::before {
   }
   .hourly-forecast .card-sm {
     padding: 16px;
+  }
+
+  .slider-container {
+    border-top-left-radius: var(--radius-16);
+    margin-inline: 0 -24px;
+    border-bottom-left-radius: var(--radius-16);
   }
 }
 
