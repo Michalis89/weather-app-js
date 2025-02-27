@@ -9,15 +9,17 @@ Weatherio is a weather web application that provides users with current weather 
 - **Location-based Weather:** Users can view weather information based on their current location or by searching for a specific city.
 - **Air Quality Index (AQI):** Includes information about the Air Quality Index (AQI) along with corresponding health advisories.
 - **Responsive Design:** The app is responsive and works seamlessly across various devices and screen sizes.
+- **Vite Integration:** Uses Vite for faster development and environment variable management.
 
 ## Technologies Used
 
 - **HTML/CSS:** Used for structuring and styling the web pages to create an attractive user interface.
 - **JavaScript:** Implemented to fetch data from the OpenWeather API, handle user interactions, and dynamically update the UI.
 - **OpenWeather API:** Integrated with the OpenWeather API to retrieve real-time weather data for different locations.
+- **Vite:** Utilized for a modern development environment and easy environment variable management.
 - **Git:** Version control system used for tracking changes and collaborating on the project.
 - **GitHub:** Hosting platform for the project repository.
-- **Deployment:** Deployed the web app to a hosting service for public access.
+- **Deployment:** Deployed using Vercel for seamless public access.
 
 ## How to Use
 
@@ -33,17 +35,36 @@ Weatherio is a weather web application that provides users with current weather 
    cd weatherio
    ```
 
-2. Obtain an API key from [OpenWeather](https://openweathermap.org), craete and replace YOUR_API_KEY in the config.js file with your actual API key.
+2. Install dependencies:
 
    ```bash
-   const API_KEY = "YOUR_API_KEY";
-
-   export default API_KEY;
+   npm install
    ```
 
-3. Open the index.html file in your web browser to launch Weatherio.
+3. Obtain an API key from [OpenWeather](https://openweathermap.org), create a `.env` file in the root directory, and add:
 
-4. Enter a city name in the search bar to view the weather forecast for that location.
+   ```env
+   VITE_WEATHER_API_KEY=YOUR_API_KEY
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the application in your browser at `http://localhost:5173`.
+
+6. Enter a city name in the search bar to view the weather forecast for that location.
+
+## Deployment on Vercel
+
+1. Push the repository to GitHub.
+2. Go to [Vercel](https://vercel.com) and import the repository.
+3. Add an environment variable in Vercel:
+   - **Key:** `VITE_WEATHER_API_KEY`
+   - **Value:** Your OpenWeather API Key
+4. Deploy the project.
 
 ## Demo
 

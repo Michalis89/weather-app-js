@@ -1,6 +1,6 @@
 "use strict";
 
-import API_KEY from "./config.js";
+import { API_KEY } from "./config.js";
 
 export const fetchData = function (URL, callback) {
   console.log("API Key:", API_KEY);
