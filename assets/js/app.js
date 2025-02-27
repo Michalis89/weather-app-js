@@ -340,4 +340,20 @@ export const updateWeather = function (lat, lon) {
   });
 };
 
-export const error404 = () => (errorContent.style.display = "flex");
+export const error404 = () => {
+  const container = document.querySelector("[data-container]");
+  container.innerHTML = ""; // Καθαρίζουμε το περιεχόμενο
+
+  const errorPage = document.createElement("section");
+  errorPage.classList.add("error-content");
+
+  errorPage.innerHTML = `
+    <h2 class="heading">404</h2>
+    <p class="body-1">Page not found!</p>
+    <a href="#/weather?lat=37.9839412&lon=23.7283052" class="btn-primary">
+      <span class="span">Go Home</span>
+    </a>
+  `;
+
+  container.appendChild(errorPage);
+};
