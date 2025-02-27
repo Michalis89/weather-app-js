@@ -156,11 +156,11 @@ body {
   font-family: 'Material Symbols Rounded';
   font-style: oblique;
   font-weight: 400;
-  src: url(../font/material-symbol-rounded.woff2) format('woff2');
+  src: url(../assets/font/material-symbol-rounded.woff2) format('woff2');
 }
 
 .m-icon {
-  font-family: 'Material Symbols Rounded';
+  font-family: 'Material Symbols Rounded', sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 2.4rem;
@@ -661,7 +661,8 @@ article.container::before {
 
 .slider-container {
   overflow-x: auto;
-  margin-inline: -16px;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #333;
 }
 
 .slider-container::-webkit-scrollbar {
@@ -807,11 +808,7 @@ article.container::before {
     flex-direction: column-reverse;
     gap: 8px;
   }
-  .slider-container {
-    margin-inline: 0 -24px;
-    border-bottom-left-radius: var(--radius-16);
-    border-top-left-radius: var(--radius-16);
-  }
+
   .slider-list::before {
     display: none;
   }
@@ -820,12 +817,6 @@ article.container::before {
   }
   .hourly-forecast .card-sm {
     padding: 16px;
-  }
-
-  .slider-container {
-    border-top-left-radius: var(--radius-16);
-    margin-inline: 0 -24px;
-    border-bottom-left-radius: var(--radius-16);
   }
 }
 

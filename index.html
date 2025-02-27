@@ -17,10 +17,9 @@
     href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <script src="./assets/js/app.js" type="module"></script>
-  <script src="./assets/js/route.js" type="module"></script>
-
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./js/app.js" type="module"></script>
+  <script src="./js/route.js" type="module"></script>
 
   <body>
     <header class="header">
@@ -53,8 +52,13 @@
 
           <div class="search-result" data-search-result>
             <ul class="view-list" data-search-list>
-
-                <a href="#" class="item-link has-state" data-search-toggler></a>
+              <li>
+                <a
+                  href="#"
+                  class="item-link has-state"
+                  data-search-toggler
+                  aria-label="Toggle search"
+                ></a>
               </li>
             </ul>
           </div>

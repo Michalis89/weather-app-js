@@ -3,6 +3,7 @@
 import API_KEY from "./config.js";
 
 export const fetchData = function (URL, callback) {
+  console.log("API Key:", API_KEY);
   fetch(`${URL}&appid=${API_KEY}`)
     .then((res) => res.json())
     .then((data) => callback(data))
